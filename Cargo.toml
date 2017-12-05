@@ -1,0 +1,19 @@
+[package]
+name = "wasm-link"
+version = "0.1.0"
+authors = ["NikVolf <nikvolf@gmail.com>"]
+
+[dependencies]
+pwasm-std = "0.2"
+
+[[bin]]
+name = "auth"
+path = "src/auth.rs"
+
+[[bin]]
+name = "stake"
+path = "src/stake.rs"
+
+[profile.release]
+panic = "abort"
+lto = true
