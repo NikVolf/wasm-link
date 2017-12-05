@@ -3,6 +3,8 @@
 
 extern crate pwasm_std;
 
+use pwasm_std::hash::H256;
+
 #[no_mangle]
-pub unsafe extern "C" fn by_hash(hash_ptr: *const u8) {
+pub unsafe extern "C" fn by_hash(hash_ptr: &H256) {
 }
